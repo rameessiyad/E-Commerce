@@ -28,7 +28,10 @@ const ProductsSlider = () => {
     useEffect(() => {
         const fetchLatestProducts = async () => {
             try {
-                const response = await fetch(`${BaseURL}/product/latest`);
+                const response = await fetch(`${BaseURL}/product/latest`, {
+                    method: 'GET',
+                    credentials: 'include'
+                });
                 if (!response.ok) {
                     throw new Error('Failed to fetch products');
                 }
