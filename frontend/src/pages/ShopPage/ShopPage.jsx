@@ -3,6 +3,7 @@ import ShopBanner from '../../components/Shop/ShopBanner';
 import { useNavigate, Link } from 'react-router-dom';
 import { FaStar, FaMinus, FaPlus } from 'react-icons/fa';
 import { BaseURL } from '../../api';
+import { toast } from 'react-toastify';
 
 const ShopPage = () => {
     const categories = ['All', 'Clothing', 'Footwear', 'Accessories', 'Grooming'];
@@ -111,7 +112,7 @@ const ShopPage = () => {
                 throw new Error('Failed to add product to cart');
             }
 
-            const result = await response.json();
+            
             setCart((prevCart) => ({
                 ...prevCart,
                 [productId]: (prevCart[productId] || 0) + quantity,

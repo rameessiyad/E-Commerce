@@ -3,7 +3,7 @@ import Steps from '../../components/Steps';
 import { useNavigate } from 'react-router-dom';
 
 const OrderCompletePage = () => {
-    const [currentStep, setCurrentStep] = useState(3);
+    const currentStep = 3;
 
     const navigate = useNavigate();
 
