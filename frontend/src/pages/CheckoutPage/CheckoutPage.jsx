@@ -255,7 +255,7 @@ const CheckoutPage = () => {
                             </div>
                         </div>
 
-                        <button type="submit" className="w-full py-3 px-6 bg-primary text-white rounded hover:bg-primary-dark">Place Order</button>
+                        <button type="submit" disabled={loading} className="w-full py-3 px-6 bg-primary text-white rounded hover:bg-primary-dark">{loading ? 'Loading...' : 'Place Order'}</button>
                     </form>
                 </div>
 
