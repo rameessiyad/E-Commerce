@@ -25,6 +25,7 @@ module.exports = {
 
     addToCart: asyncHandler(async (req, res) => {
         const user = req.user;
+        console.log(user)
         if (!user) {
             res.status(401);
             throw new Error('User not found');
