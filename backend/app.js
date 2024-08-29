@@ -12,7 +12,12 @@ const { notFound, errorHandler } = require('./middlewares/error-middleware');
 const app = express();
 
 // Allowed origins
-const allowedOrigins = ['http://localhost:5000', 'https://e-commerce-chi-ochre.vercel.app', 'https://mens-cart-admin.vercel.app', 'http://localhost:4000'];
+const allowedOrigins = [
+    'http://localhost:5000',
+    'https://e-commerce-chi-ochre.vercel.app',
+    'https://mens-cart-admin.vercel.app',
+    'http://localhost:4000'
+];
 
 //middlewares
 app.use(express.json());
