@@ -24,6 +24,7 @@ RESTful API: Backend API to handle all operations like user authentication, prod
 Image Uploads: Integrated multiple image uploading using multer.
 
 🛠️ Technologies Used
+
 Frontend:
 
 React.js
@@ -37,3 +38,15 @@ Node.js with Express.js
 MongoDB with Mongoose for database management
 JWT for authentication
 Multer for image uploading
+
+💻 Usage
+⭐ Admin: Log in with admin credentials to manage users and posts.
+⭐ User: Sign up or log in to create, edit, and interact with blog posts.
+🤝 Contributing
+If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
+
+📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+🙏 Acknowledgments
+Thanks to the open-source community for the tools and libraries used in this project.
